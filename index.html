@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Apology and Commitment Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      background-color: #f0f8ff;
+    }
+    form {
+      background-color: #ffffff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, textarea, select, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Student Apology and Commitment Form</h2>
+
+  <form action="https://formspree.io/f/xdkzljda" method="POST">
+    <label for="name">Full Name:</label>
+    <input type="text" name="name" required>
+
+    <label for="class">Class / Section:</label>
+    <input type="text" name="class" required>
+
+    <label for="message">What would you like to say to the teacher?</label>
+    <textarea name="message" rows="4" required></textarea>
+
+    <label for="improvement">How will you behave better in future?</label>
+    <textarea name="improvement" rows="4" required></textarea>
+
+    <label for="promise">Do you promise to cooperate and show respect?</label>
+    <select name="promise" required>
+      <option value="">-- Select an Option --</option>
+      <option value="Yes, I promise.">Yes, I promise.</option>
+      <option value="I will try my best.">I will try my best.</option>
+      <option value="I need more time to reflect.">I need more time to reflect.</option>
+    </select>
+
+    <button type="submit">Submit</button>
+  </form>
+
+</body>
+</html>
